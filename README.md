@@ -12,6 +12,10 @@ Steps to install PyTorch on Mac with Anaconda
 
     conda activate <env_name>
     
+## Install PyTorch
+
+    pip install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu
+    
 ## Test the installation
 
     python -c "import torch; print(torch.__version__);print(torch.tensor([4,2,0], device='mps'))"
